@@ -42,7 +42,7 @@ $bestCars = ['lamboghini','ferrari5','porche911','mustang'];
 foreach($bestCars as $index => $bestCar){
     echo"$index -- $bestCar <br>";
 }
-*/
+
 //using associative arrays and foreach
 
 $motorvehicles = [
@@ -53,4 +53,25 @@ $motorvehicles = [
 
 foreach($motorvehicles as $key => $value){
     echo "$key - $value <br>";
+}
+*/
+
+$subjects = [
+
+    'grammar' => ['English','Kiswahili'],
+    'Sciences' => ['physics','math','chemistry','biology'],
+    'Socials' => ['History','CRE','Geography'],
+    'Technicals' => ['Business studies','Computer','Agriculture']
+
+];
+
+//using foreach
+
+foreach ($subjects as $key => $value){
+
+    count($value)<=4?print_r($value):var_dump($value);
+    //var_dump($subject) ;
+    echo "$key - $value[0]<br>";
+    
+
 }
