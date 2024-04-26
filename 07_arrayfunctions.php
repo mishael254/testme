@@ -39,8 +39,8 @@ array_shift($fruits);
 
 
 //splitting into chunks
-$chunkedArray = array_chunk($fruits,2);
-print_r($chunkedArray);
+//$chunkedArray = array_chunk($fruits,3);
+//print_r($chunkedArray);
 
 $numbers1 = [1,2,3,4,5,6];
 $numbers2 = [7,8,9,10];
