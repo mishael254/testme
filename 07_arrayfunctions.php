@@ -39,10 +39,29 @@ array_shift($fruits);
 
 
 //splitting into chunks
-$chunkedArray = array_chunk($fruits,2);
-print_r($chunkedArray);
+//$chunkedArray = array_chunk($fruits,3);
+//print_r($chunkedArray);
 
+$numbers1 = [1,2,3,4,5,6];
+$numbers2 = [7,8,9,10];
 
+$num1_and_num2 = array_merge($numbers1,$numbers2);
+//print_r($num1_and_num2);
+
+//combining arrays
+
+$fruits = ["avocados","Apples", "bananas"];
+$colors = ["Green", "Red", "Yellow"];
+ 
+$fruits_description = array_combine($colors,$fruits);
+
+//print_r($fruits_description);
+$flipped_values = array_flip($fruits_description);
+//print_r($flipped_values);
+
+$numbers5 = range(1,20);
+
+print_r($numbers5);
 
 
 
