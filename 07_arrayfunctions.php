@@ -40,7 +40,37 @@ array_shift($fruits);
 
 //splitting into chunks
 $chunkedArray = array_chunk($fruits,2);
-print_r($chunkedArray);
+//print_r($chunkedArray);
+$colors = ["yellow","red","Green"];
+$fruits = ["banana","apple","Avocado"];
+
+$fruit_with_colors = array_combine($colors, $fruits);
+
+//print_r($fruit_with_colors);
+
+//flip fruits with colors
+
+$flipped_fruits_with_colors = array_flip($fruit_with_colors);
+
+//print_r($flipped_fruits_with_colors);
+$numbers = range(1,20);
+//print_r($numbers);
+
+$assigning_names = function($number){
+    return "Number $number";
+};
+
+$new_num_with_names = array_map($assigning_names,$numbers);
+//print_r ($new_num_with_names);
+
+$less_than_10 = array_filter($numbers, fn($number)=> $number <=10);
+print_r($less_than_10);
+
+
+$sum_of_numbers = array_reduce($numbers, fn($carry,$number)=> $carry + $number);
+var_dump($sum_of_numbers);
+
+
 
 
 
