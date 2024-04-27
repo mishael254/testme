@@ -13,7 +13,7 @@
 ;
 ?>
 
-<a href="<?php echo $_SERVER["PHP_SELF"]?>?name=john&age=25">Click</a>
+
 <form action="<?php echo $_SERVER["PHP_SELF"]?>" method="post" >
     <div>
         <label for="name">Name:</label>
